@@ -1,0 +1,109 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+
+<header class="my-4 mb-10 text-center">
+    <h1 class="text-4xl font-bold text-stone-900 mb-2">Ignacio Mijares Santibañez</h1>
+    <div class="flex flex-wrap justify-center gap-4 text-stone-600">
+        <a href="mailto:ignacio122003@gmail.com">ignacio122003@gmail.com</a>
+        <a href="tel:+12369759766">+1-236-975-9766</a>
+        <a href="https://linkedin.com/in/ignacio-mijares">LinkedIn</a>
+        <a href="https://github.com/ims2003">GitHub</a>
+    </div>
+    <p class="text-sm text-stone-400 mt-2 italic">Last updated: April 1st, 2026</p>
+</header>
+
+<section class="mb-10">
+    <h2>Education</h2>
+    <div class="flex justify-between items-baseline mb-1">
+        <h3 class="text-xl font-bold"><a href="https://www.ubc.ca">University of British Columbia</a></h3>
+        <span class="text-stone-500 font-medium">Expected April 2027</span>
+    </div>
+    <p class="italic text-stone-700">B.A. International Economics Major & Data Science Minor <br>
+        <a href="https://economics.ubc.ca/">Vancouver School of Economics</a></p>
+
+    
+    <div class="bg-stone-100 p-4 rounded-lg border-l-4 border-emerald-900">
+
+        <ul class="list-none space-y-1 text-stone-800">
+            <li><strong>GPA:</strong> 81.1%</li>
+            <li><strong>Awards:</strong> Cum Laude Track, International Baccalaureate Diploma</li>
+            <li><strong>Coursework:</strong> Econometrics, Microeconomics, Macroeconomics, Data Science, Programming, Accounting, Ethics</li>
+        </ul>
+    </div>
+</section>
+
+<section class="mb-10">
+    <h2>Work Experience</h2>
+
+    <div class="mb-8">
+        <div class="flex justify-between items-baseline">
+           <h3 class="text-xl font-bold"><a href="https://www.sealeassociates.com/">Seale & Associates</a></h3>
+            <span class="text-stone-500">May 2025 – July 2025</span>
+        </div>
+        <p class="italic text-stone-600 mb-2">Junior Analyst — Washington DC</p>
+        <div class="bg-stone-100 p-4 rounded-lg border-l-4 border-emerald-900">
+            <ul class="list-disc ml-5 space-y-2 text-stone-800">
+                <li>Managed buy & sell-side processes, involved in client communications, deliverables, and financial modeling in a high-demand environment.</li>
+                <li>Collaborated with the leading investment bank by number of transactions in Mexico.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <div class="flex justify-between items-baseline">
+            <h3 class="text-xl font-bold"><a href="https://www.finamex.com.mx/">Vector Casa de Bolsa</a><sup>1</sup></h3>
+            <span class="text-stone-500">May 2024 – July 2024</span>
+        </div>
+        <p class="italic text-stone-600 mb-2">Investment Banking Junior Analyst — Monterrey, Mexico</p>
+        <div class="bg-stone-100 p-4 rounded-lg border-l-4 border-emerald-900">
+            <ul class="list-disc ml-5 space-y-2 text-stone-800">
+                <li>Involved in buy/sell side transactions, valuation, refinancing, and M&A projects.</li>
+                <li>Developed a profound understanding of financial models, accounting, and due diligence processes.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="mb-10">
+        <div class="flex justify-between items-baseline">
+            <h3 class="text-xl font-bold"><a href="https://www.pulsarml.com/">PulsarML</a></h3>
+            <span class="text-stone-500">May 2022 – Sept 2022</span>
+        </div>
+        <p class="italic text-stone-600 mb-2">Sales Team Volunteer — Monterrey, Mexico</p>
+        <div class="bg-stone-100 p-4 rounded-lg border-l-4 border-emerald-900">
+            <ul class="list-disc ml-5 space-y-2 text-stone-800">
+                <li>Analyzed competitors, products, and pricing strategies for a machine-learning startup.</li>
+                <li>Assisted in client meetings by presenting customers with insights on product offerings and pricing structures.</li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+<section class="mb-10">
+    <h2>Skills & Languages</h2>
+    <p class="">
+        <b><i>Technical Skills:</i></b> Python, Java, R, SQL, HTML/CSS, LATEX, Pandas, NumPy, Matplotlib<br>
+        <b><i>Tools:</i></b> Excel, Git/GitHub, VS Code, StataSE, Microsoft Suite, Power BI, Tableau, Jira<br>
+        <b><i>Languages:</i></b> English, Spanish, French<sup> Elementary</sup></p>
+</section>
+
+<section class="mb-10">
+    <h2>Extracurriculars</h2>
+    <p class="">
+        <b><i>UBC Triathlon:</i></b> 
+        Represent the University of British Columbia in triathlon, a role that requires me to manage a rigorous, high-volume endurance training schedule with my academic responsibilities and professional commitments<br>
+        <b><i>Vancouver Thundrbirds Track Club:</i></b> 
+        Represented both the Vancouver Thunderbirds and Team British Columbia in cross country and track & field. Additionally volunteered as a coach for primary schools in the Vancouver area, cordinating training sessions and organized events to promote athletics and healthy habits among young students<br>
+        <b><i>IGUBC:</i></b> 
+        Volunteer as a counselor to mentor primary school students from underprivileged areas of Vancouver, providing guidance and encouragement to help them pursue higher education.
+    </p>
+</section>
+
+<div class="flex justify-center py-4 mb-10">
+    <a href="app/static/resume/IgnacioMS_Resume.pdf" download><button class="nav-button justify-center">Download My Resume</button></a>
+</div>
+
+<p>
+    <sup>1</sup> Vector Casa de Bolsa was acquired by Finamex in 2025.
+</p>
+{% endblock %}
