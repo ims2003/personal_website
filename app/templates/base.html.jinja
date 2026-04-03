@@ -34,19 +34,24 @@
     </style>
 </head>
 <body class="bg-stone-50 font-serif">
-    <div class="flex justify-center py-4">
-        <nav class="flex gap-6">
+
+    <header class="fixed top-0 left-0 z-50 w-full bg-stone-50">
+        <div class="flex h-16 w-full items-center justify-center space-x-4 px-4">
             <a href="/"><button class="nav-button {% if request.path == '/' %} nav-button-active {% endif %}">Home</button></a>
             <!--<a href="/about"><button class="nav-button {% if request.path == '/about' %} nav-button-active {% endif %}">About</button></a>-->
             <a href="/resume"><button class="nav-button {% if request.path == '/resume' %} nav-button-active {% endif %}">Resume</button></a>
             <a href="/projects"><button class="nav-button {% if request.path == '/projects' %} nav-button-active {% endif %}">Projects</button></a>
             <a href="/pursuits"><button class="nav-button {% if request.path == '/pursuits' %} nav-button-active {% endif %}">Pursuits</button></a>
-        </nav>
-    </div>
+        </div>
+    </header>
+
+
     <main class="max-w-4xl mx-auto px-5 pb-20">
+        <div class = "h-8"></div>
         {% block content %}
         <!-- Content goes here -->
         {% endblock %}
     </main>
+
 </body>
 </html>
