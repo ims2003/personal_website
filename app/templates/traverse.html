@@ -1,0 +1,33 @@
+{% extends "base.html.jinja" %}
+
+{% block content %}
+
+<div class="strava-embed-placeholder" data-embed-type="activity" data-embed-id="18351612689" data-style="standard" data-from-embed="false" data-token="WsAQhCiyiX_9Gw5U89LrQGKslSrDcxdMGU863KVoyxo"></div><script src="https://strava-embeds.com/embed.js"></script>
+
+<div class="mb-10"></div>
+
+<p>Pacific Spirit Regional Park is a 2,100 acre park in Vancouver British Columbia. It contains an expansive trail system of 55 km. We wanted to attempt the fastest time to cover all trails in pacific spirit, excluding the foreshore trail following the UBC’s shoreline, simultaneously finding the shortest possible path to do so.
+</p>
+
+<p>This then became a three stage problem. The first, finding the optimal pass through pacific spirits, repeating the least amount of distance. The second, planning on how to sustain ourselves throughout an attempt to complete the parks trails. The third, completing the multi hour traverse faster than any previous attempt at covering the park. 
+</p>
+
+<p>To optimize our route we used the Chinese Postman Algorithm, finding the shortest closed path that passes through every edge of the graph. This type of algorithm is used in logistic design (mail delivery, street sweeping, etc). 
+</p>
+
+<!--code-->
+
+<p>After calculating the optimal route, we made several attempts to optimize it for human completion. Deciding to sweep through each of the 4 main sections of the park one by one, and avoiding certain confusing junctions. The final personalized route resulted in a roughly 60 kilometre endeavour.
+</p>
+
+<p> To sustain ourselves during the attempt we had to consume approximately 80g of carbs per hour, along with personalized amounts of caffeine. Our vests carried enough to sustain for the first 30k of the attempt. We had to plant aid stations in the forest at the 30k and 48k marks respectively. Keeping down said fuel was a challenge within itself.
+</p>
+
+<img src="/static/images/fuel.webp" loading="lazy" alt="fuel" class="h-80"></img>
+
+<p>The traverse itself went smoothly. Proper planning, company, and practice with both navigation and fueling allowed us to cruise through the first 40 km rather unbothered. It was only after the marathon mark that we entered unmarked territory. Each of us struggled in our own ways at separate points, but the light at the end of the tunnel pushed us towards a elapsed time of 5:48.11 covering 59.2 km at a pace of 5:53/km. The fastest known time and pace covering the forest, through the shortest know route.
+</p>
+
+<img src="/static/images/finish.webp" loading="lazy" alt="finish" class="h-80"></img>
+
+{% endblock content %}

@@ -22,4 +22,8 @@ def projects():
 def pursuits():
     return render_template("pursuits.html")
 
+@home.route("/traverse")
+def traverse():
+    return render_template("traverse.html")
+
 
