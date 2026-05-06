@@ -26,4 +26,8 @@ def pursuits():
 def traverse():
     return render_template("traverse.html")
 
+@home.route("/thesis")
+def thesis():
+    return render_template("thesis.html")
+
 
