@@ -5,16 +5,32 @@
 
 <h2>Whales & Prediction Markets</h2>
 
+<div class="mb-6"></div>
+
+<p>
+    My thesis examines whether “whales,” or unusually large traders, influence prices in prediction markets. 
+    Using transaction-level data from Polymarket, I studied whether large trades led to meaningful price movements after the trade occurred. 
+    The project identified whale trades based on their share of total market volume and then measuring price changes across different time windows, including several hours and days after each trade.
+    The main result was that whale trades did not have a statistically significant effect on future price changes. 
+    This suggests that prediction markets are relatively resilient to large individual trades and may efficiently aggregate information from many participants rather than being easily moved by a single trader. 
+    To execute the project, I used Python for data cleaning, transformation, and analysis, including working with APIs, handling large CSV files, and creating event-level datasets. 
+    I also applied econometric methods such as fixed-effects regressions, clustered standard errors, and event-study style analysis. 
+    The project required skills in data wrangling, statistical modeling, causal reasoning, financial market interpretation, and data visualization to communicate both the empirical results and their broader implications.
+</p>
+
 <div class="mb-10"></div>
 
-<!--Short paragraph about the thesis' goals and skills-->
+<p class="flex justify-center">
+    <iframe 
+        src="./static/thesis/thesis.pdf" width="80%" height="600px" style="border:none;" title="PDF Document">
+    </iframe>
+</p>
 
-<!--Abstract-->
-
-<iframe src="./static/thesis/thesis.pdf" width="100%" height="600px" style="border:none;" title="PDF Document">
+<p class="flex justify-center py-4 mb-10 gap-4">
     <a href="./static/thesis/thesis.pdf" download><button class="nav-button justify-center">Download My Thesis</button></a>
-</iframe>
+    <a href="https://github.com/ims2003/prediction_market_data_wrangling.git"><button class="nav-button justify-center">Check Out My Code</button></a>
+</p>
 
 <!--code base-->
 
-{% endblock content}
+{% endblock content %}
