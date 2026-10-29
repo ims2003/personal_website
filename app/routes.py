@@ -6,10 +6,6 @@ home = Blueprint('home', __name__, template_folder='templates')
 def index():
     return render_template("home.html")
 
-@home.route("/about")
-def about():
-    return render_template("about.html")
-
 @home.route("/resume")
 def resume():
     return render_template("resume.html")
@@ -30,4 +26,7 @@ def traverse():
 def thesis():
     return render_template("thesis.html")
 
+@home.route("/aboutrunning")
+def aboutrunning():
+    return render_template("aboutrunning.html")
 
