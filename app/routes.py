@@ -26,7 +26,7 @@ def traverse():
 def thesis():
     return render_template("thesis.html")
 
-@home.route("/aboutrunning")
-def aboutrunning():
-    return render_template("aboutrunning.html")
+@home.route("/onrunning")
+def onrunning():
+    return render_template("onrunning.html")
 
