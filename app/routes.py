@@ -18,6 +18,12 @@ def projects():
 def pursuits():
     return render_template("pursuits.html")
 
+@home.route("/reflections")
+def reflections():
+    return render_template("reflections.html")
+
+# Sub Pages
+
 @home.route("/traverse")
 def traverse():
     return render_template("traverse.html")
@@ -26,7 +32,7 @@ def traverse():
 def thesis():
     return render_template("thesis.html")
 
-@home.route("/onrunning")
+@home.route("/reflections/onrunning")
 def onrunning():
     return render_template("onrunning.html")
 
